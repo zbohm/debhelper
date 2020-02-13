@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='debhelper',
-    ersion='0.0.0',
+    version='0.0.1',
     url="http://yaybu.com/",
     packages=find_packages(exclude=['ez_setup']),
     include_package_data=True,

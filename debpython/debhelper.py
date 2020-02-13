@@ -202,7 +202,8 @@ class DebHelper(object):
                 fp = open(fn, 'w')
                 fp.write(data)
                 fp.close()
-                chmod(fn, 0755)
+                # Octal number 0755 written in Python 2 causes SyntaxError in Python 3. there must be 0o755.
+                chmod(fn, 493)
 
     def save(self):
         self.save_substvars()
