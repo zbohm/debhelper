@@ -116,7 +116,7 @@ class Dependencies(object):
             for interpreter, version in stats['shebangs']:
                 self.depend(interpreter)
 
-        for private_dir, details in stats['private_dirs'].iteritems():
+        for private_dir, details in stats['private_dirs'].items():
             if options.ignore_shebangs:
                 versions = []
             else:
